@@ -2,6 +2,8 @@ version: "3.7"
 services:                                                                                                 
   dashboard-be:                                                                                           
     build: .                                                                                              
+    volumes:
+      - './logs:/app/logs'
     ports:                                                                                                
       - 9001:5005                                                                                         
     restart: always                                                                                       
